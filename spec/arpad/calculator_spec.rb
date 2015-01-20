@@ -47,6 +47,12 @@ describe Arpad::Calculator do
     context "with an invalid outcome value" do
       it { expect{calculate_elo(1300, 1800, "foo")}.to raise_error "user inputted foo which is not a valid outcome"}
     end
+
+    context "if the elo input is non-integer" do
+      it "should try to force integer" do
+        expect(calculate_elo("1300", "1800", "win")).to be 1315
+      end
+    end
   end
 
   def calculate_elo(elo_one, elo_two, outcome, config = {})

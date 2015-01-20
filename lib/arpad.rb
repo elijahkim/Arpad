@@ -12,7 +12,7 @@ module Arpad
       )
       score_value = calculate_score_value(outcome)
 
-      (elo_one + (k_factor * (score_value - expected_score))).to_i
+      (elo_one.to_i + (k_factor * (score_value - expected_score))).to_i
     end
 
     private
