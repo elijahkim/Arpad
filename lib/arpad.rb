@@ -30,6 +30,10 @@ module Arpad
         1
       elsif outcome == "lose"
         0
+      elsif outcome == "tie"
+        0.5
+      else
+        raise "user inputted #{outcome} which is not a valid outcome"
       end
     end
   end
