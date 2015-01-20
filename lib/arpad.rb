@@ -11,4 +11,10 @@ module Arpad
       end
     end
   end
+
+  class TransformedRatingCalculator
+    def self.calculate_transformed_rating(elo)
+      (10**(elo.to_f / 400))
+    end
+  end
 end
