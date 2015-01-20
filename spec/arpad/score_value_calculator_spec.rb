@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Arpad::ScoreRatingCalculator do
+describe Arpad::ScoreValueCalculator do
   describe "#calculate_score_value" do
     context "if the player wins" do
       it "should return 1" do
@@ -15,6 +15,6 @@ describe Arpad::ScoreRatingCalculator do
   end
 
   def calculate_score_value(outcome)
-    Arpad::ScoreRatingCalculator.calculate_score_value(outcome)
+    Arpad::ScoreValueCalculator.calculate_score_value(outcome)
   end
 end
