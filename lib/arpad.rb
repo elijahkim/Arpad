@@ -23,4 +23,14 @@ module Arpad
       t_rating_one / (t_rating_one + t_rating_two)
     end
   end
+
+  class ScoreRatingCalculator
+    def self.calculate_score_value(outcome)
+      if outcome == "win"
+        1
+      elsif outcome == "lose"
+        0
+      end
+    end
+  end
 end
