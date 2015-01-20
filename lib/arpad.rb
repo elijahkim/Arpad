@@ -17,4 +17,10 @@ module Arpad
       (10**(elo.to_f / 400))
     end
   end
+
+  class ExpectedScoreCalculator
+    def self.calculate_expected_score(t_rating_one, t_rating_two)
+      t_rating_one / (t_rating_one + t_rating_two)
+    end
+  end
 end
