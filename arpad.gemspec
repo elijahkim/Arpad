@@ -8,8 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Arpad::VERSION
   spec.authors       = ["Elijah Kim"]
   spec.email         = ["kimelijah90@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A lightweight gem that calculates elo}
   spec.homepage      = ""
   spec.license       = "MIT"
 
