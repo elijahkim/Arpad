@@ -26,11 +26,11 @@ module Arpad
     end
 
     def self.calculate_score_value(outcome)
-      if outcome == "win"
+      if outcome.to_s == "win"
         1
-      elsif outcome == "lose"
+      elsif outcome.to_s == "lose"
         0
-      elsif outcome == "tie"
+      elsif outcome.to_s == "tie"
         0.5
       else
         raise "user inputted #{outcome} which is not a valid outcome"
